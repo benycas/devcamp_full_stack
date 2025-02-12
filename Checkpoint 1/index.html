@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint 1</title>
+    <script src="https://kit.fontawesome.com/0f3793b933.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    .gridOne {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .gridThree {
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        width: 500px;
+        height: 300px;
+        background-color: lightgrey;
+    }
+
+    .image-sea img{
+        width: 500px;
+        height: 225px;
+    }
+
+    .gridFour {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 500px;
+        background-color: green;
+    }
+
+    #text3_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridFive {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: lightgrey;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .images img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .gridSix {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 500px;
+        background-color: lightgrey;
+    }
+
+    .text5_1 p {
+        font-family: 'Karla', sans-serif;
+    }
+</style>
+<body>
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color: blue;">My Fantastic Content</p>
+    </div>
+    <div class="gridTwo">
+        <div class="text1_1">
+            <p style="background-color: red;">Whatever</p>
+        </div>
+        <div class="text1_2">
+            <p style="background-color: blue;">text</p>
+        </div>
+        <div class="text1_3">
+            <p style="background-color: yellow;">I want</p>
+        </div>
+    </div>
+    <div class="gridThree">
+        <div class="text2_1">
+            <p>The text I chose is Awesome</p>
+        </div>
+        <div class="image-sea">
+            <img src="images/sea.jpg" alt="">
+        </div>
+    </div>
+    <div class="gridFour">
+        <div class="text3_1">
+            <p>My Even More Awesome Text</p>
+        </div>
+        <div id="text3_2">
+            <p>My left text</p>
+            <p>My right text</p>
+        </div>
+    </div>
+    <div class="gridFive">
+        <div class="text4_1">
+            <p>My Even More Awesome Text</p>
+        </div>
+        <div class="images">
+            <img src="images/beach.jpg" alt="">
+            <img src="images/wave.jpg" alt="">
+        </div>
+    </div>
+    <div class="gridSix">
+        <div class="icon">
+            <i class="fa-solid fa-atom"></i>
+        </div>
+        <div class="text5_1">
+            <p>MY AWESOME GOOGLE FONT IS APPLIED HERE</p>
+    </div>
+</body>
+</html>
