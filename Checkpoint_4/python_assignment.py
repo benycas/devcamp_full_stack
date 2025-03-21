@@ -9,11 +9,11 @@ decimal_example = Decimal(1.23)
 dict_example = {'name': 'Beñat', 'Last name': 'Iglesias','age': 32}
 
 # Exercise 2: Round your float up.
-float_rounded = round(float_example)
+import math
+float_rounded = math.ceil(float_example)
 print(float_rounded)
 
 # Exercise 3: Get the square root of your float.
-import math
 float_sqrt = math.sqrt(float_example)
 print(float_sqrt)
 
@@ -38,5 +38,12 @@ list_example.sort()
 print(list_example)
 
 # Exercise 9: Use reassignment to add an element to your tuple.
-tuple_example = tuple_example + ('e',)
+tuple_example += ('e',)
 print(tuple_example)
+
+dict_example = {'name': 'Beñat', 'Last name': 'Iglesias','age': 32}
+print(dict_example['age']) #32
+
+# Ejemplo de modificación de diccionario 
+dict_example['city'] = 'Donostia'
+print(dict_example) #{'name': 'Beñat', 'Last name': 'Iglesias', 'age': 32, 'city': 'Donostia'}
