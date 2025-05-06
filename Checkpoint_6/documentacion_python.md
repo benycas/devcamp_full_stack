@@ -65,6 +65,8 @@ Una API actúa como un intermediario que permite la comunicación entre distinto
 
 Otro verbo muy utilizado es **DELETE**, que se utiliza para eliminar recursos específicos en el servidor.
 
+![Verbos API](/verbos_api.png)
+
 Para conocer mejor cómo funcionan estos verbos, a continuación se creará una aplicación para gestionar un catálogo de libros almacenados en una base de datos SQLite. Permite realizar operaciones como la creación, lectura, actualización y eliminación de libros a través de diferentes rutas HTTP.
 
 ```python
