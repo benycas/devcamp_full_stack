@@ -160,6 +160,8 @@ if __name__ == '__main__':
 
 ## ¿Es MongoDB una base de datos SQL o NoSQL?
 
+![Logo MongoDB](/mongodb1.jpg)
+
 MongoDB es una base de datos **NoSQL** orientada a documentos que destaca por su flexibilidad, escalabilidad y rendimiento. A diferencia de las bases de datos relacionales (SQL), que organizan la información en tablas estructuradas con filas y columnas, MongoDB almacena datos en documentos similares a JSON. Esto permite que los campos varíen entre documentos y que la estructura de datos evolucione con el tiempo sin necesidad de esquemas rígidos.
 
 Cada registro en MongoDB es un documento, una estructura de datos compuesta por pares clave-valor que se asemeja a los objetos JSON. Sin embargo, internamente MongoDB usa BSON (Binary JSON), que conserva las ventajas de JSON, como la anidación, los arrays y los objetos, pero añade tipos binarios y control de longitud para mejorar el almacenamiento y la lectura. Las bases de datos en MongoDB se organizan en colecciones, equivalentes a las tablas en bases de datos SQL pero sin restricciones de esquema. Esta característica permite una gran flexibilidad en la gestión de la información.
@@ -189,7 +191,33 @@ Las APIs pueden desarrollarse en varios lenguajes de programación y siguen est�
 
 En el ámbito de las APIs web, existe un enfoque llamado REST (Representational State Transfer), que establece principios para diseñar interfaces bien estructuradas, optimizando la interacción entre servicios. Gracias a estos mecanismos, las APIs han revolucionado la manera en que las aplicaciones interactúan, posibilitando la creación de nuevas funcionalidades de forma eficiente y escalable.
 
+![API REST](/api1.png)
+
+Las API se suelen utilizar para automatizar tareas repetitivas mediante scripts que acceden a datos o servicios externos. También permiten a desarrolladores acceder a funcionalidades de un sistema sin necesidad de conocer su implementación interna.
+
+Existen distintos tipos de API. Las API abiertas o públicas están disponibles pata cualquier desarrollador. Las API privadas son de uso interno dentro de una empresa. Las API de socios se comparten con socios específicos. Por último, las API web, son accesibles a través de protocolos como HTTP. 
+
+### Protocolos API:
+
+Los protocolos de API son esenciales para establecer una forma común de comunicación entre diferentes servicios web. Gracias a ellos, es posible acceder a funcionalidades de distintos sistemas, sin importar el lenguaje de programación o sistema operativo utilizado.
+
+- **Remote Procedure Call (RPC)**: este protocolo permite que una aplicación (cliente) invoque funciones o procedimientos que se ejecutan en otra máquina (servidor), como si fueran locales. RPC facilita la interacción entre sistemas distribuidos, siguiendo una lógica cliente-servidor donde uno solicita y el otro responde con los datos requeridos.
+  
+- **Service Object Access Protocol (SOAP)**: es un protocolo basado en XML diseñado para intercambiar información estructurada en entornos distribuidos. Define reglas claras para la sintaxis de los mensajes entre aplicaciones, y puede utilizar protocolos de transporte como HTTP o SMTP para enviar y recibir datos. Aunque más complejo que otras opciones, SOAP es muy robusto y se utiliza en sistemas que requieren alta seguridad y estandarización.
+
+- **Representational State Transfer (REST)**: más que un protocolo, REST es un estilo arquitectónico para diseñar servicios web. Opera sobre HTTP y se basa en el uso de recursos identificados por URLs, permitiendo operaciones estándar como GET, POST, PUT y DELETE. REST es una alternativa más simple y flexible a SOAP, ideal para desarrollos ágiles y escalables.
+
+- **GraphQL**: es un lenguaje de consulta para APIs que permite al cliente especificar exactamente qué datos necesita. Esto reduce el tráfico de red y mejora la eficiencia, especialmente en aplicaciones móviles. También permite combinar información de varias fuentes en una sola solicitud.
+
+### Ventajas:
+- Permite construir software en componentes reutilizables.
+- Facilita ampliar o modificar un sistema sin afectar todo el conjunto.
+- Solo expone funciones necesarias, protegiendo el resto del sistema.
+- Permite que aplicaciones escritas en distintos lenguajes trabajen juntas.
+
 ## ¿Qué es Postman?
+
+![Logo Postman](postman1.png)
 
 Postman es una herramienta que utilizan los desarrolladores que trabajan con APIs, que permite diseñarlas, probarlas y gestionarlas de manera ágil y ordenada. Tiene una interfaz clara y fácil de usar, donde los usuarios pueden enviar solicitudes HTTP a diferentes APIs, comprobando así su funcionamiento de forma rápida y precisa.
 
@@ -209,6 +237,8 @@ Postman se integra con herramientas clave en el proceso de desarrollo, como GitH
 - Soporte para múltiples métodos HTTP (GET, POST, PUT, DELETE, etc.).
 - Amplia comunidad de usuarios con recursos y documentación disponible.
 - Posibilidad de agregar scripts personalizados en JavaScript para automatizar tareas avanzadas.
+
+![Interfaz Postman](/postman2.png)
 
 ## ¿Qué es el polimorfismo?
 
